@@ -1,8 +1,9 @@
 body{
   background-image: url(restaurant.png);
 }
-header{
+li{
   background-color: grey;
+
 }
 li>p{
   display: inline-block;

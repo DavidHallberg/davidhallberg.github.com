@@ -1,13 +1,13 @@
 body{
   background-color: white;
-
-
 }
+
 li{
   text-align: center;
   list-style-type: none;
 }
 li>a{
+  font-family: 'Lobster', cursive;
   display: inline-block;
   border: 1px solid #F5554A;
   width: 100px;

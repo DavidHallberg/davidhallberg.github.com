@@ -50,6 +50,16 @@ li>a:hover{
   max-width: 700px;
   margin: auto;
 }
+.main4{
+  font-family: Helvetica;
+  max-width: 700px;
+  margin: auto;
+}
+.main5{
+  font-family: Helvetica;
+  max-width: 700px;
+  margin: auto;
+}
 p{
   text-align: justify;
 }
@@ -64,4 +74,21 @@ p{
   display: grid;
   border: 1px solid #F5554A;
   max-width: 100px;
+}
+@media screen and (max-width: 920px) {
+  .main{
+    padding-left: 110px;
+  }
+  .main2{
+    padding-left: 110px;
+  }
+  .main3{
+    padding-left: 110px;
+  }
+  .main4{
+    padding-left: 110px;
+  }
+  .main5{
+    padding-left: 110px;
+  }
 }

@@ -11,21 +11,33 @@
 <!-- Om du får error med att det inte kan sparas, avmarkera filerna i mappen ...-->
   </head>
   <body>
-    <ul>
-      <li>
+
+ <ul>
+
+
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Servers</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Forum&#9660;</a>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+          </div>
+      </li>
+
+
+    </ul>
+
+    <!-- <div class="verticalMenu">
         <a href="#">Home</a>
         <a href="#">About us</a>
         <a href="#">Servers</a>
         <a href="#">Forum</a>
-      </li>
-    </ul>
-
-    <div class="verticalMenu">
-      <a href="#">Home</a>
-      <a href="#">About us</a>
-      <a href="#">Servers</a>
-      <a href="#">Forum</a>
-    </div>
+      </div>
+      -->
 
     <div class="main">
           <h2>Header</h2>
@@ -97,7 +109,27 @@
         <p>footer</p>
       </footer>
 
-    <script src="javascripts/scale.fix.js"></script>
+      <script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var d = 0; d < dropdowns.length; d++) {
+          var openDropdown = dropdowns[d];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
 
   </body>
 </html>
